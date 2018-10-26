@@ -1,0 +1,405 @@
+{
+  "appName" : "SP-hello-shiftleft-0.0.1",
+  "vulnerabilites" : [
+    {
+      "route" : "/debugEscaped",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-print",
+      "description" : "Sensitive data is printed on console in this flow. It can be viewed by unauthorized third party with access to it, such as system administrators."
+    },
+    {
+      "route" : "/account/{accountId}/withdraw",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "http-to-log",
+      "description" : "HTTP data is written to a log file in this flow. This content can be viewed by a third party that has access to the logs, such as system adminstrators."
+    },
+    {
+      "route" : "/account",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-http",
+      "description" : "Sensitive data included in HTTP request/response. This could result in sensitive data exposure."
+    },
+    {
+      "route" : "/account/{accountId}/withdraw",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-http",
+      "description" : "Sensitive data included in HTTP request/response. This could result in sensitive data exposure."
+    },
+    {
+      "route" : "/account/{accountId}/deposit",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-http",
+      "description" : "Sensitive data included in HTTP request/response. This could result in sensitive data exposure."
+    },
+    {
+      "route" : "/debugEscaped",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-http",
+      "description" : "Sensitive data included in HTTP request/response. This could result in sensitive data exposure."
+    },
+    {
+      "route" : "/customers",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-http",
+      "description" : "Sensitive data included in HTTP request/response. This could result in sensitive data exposure."
+    },
+    {
+      "route" : "/admin/login",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "session-injection",
+      "description" : "Attacker controlled data is used as session attribute without undergoing escaping or validation. See http://cwe.mitre.org/data/definitions/501.html"
+    },
+    {
+      "route" : "/admin/login",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "session-injection",
+      "description" : "Attacker controlled data is used as session attribute without undergoing escaping or validation. See http://cwe.mitre.org/data/definitions/501.html"
+    },
+    {
+      "route" : "/customers/{customerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/customers",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/account/{accountId}/deposit",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/account",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/account/{accountId}/withdraw",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/customers/{customerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/customers",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/account/{accountId}/deposit",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/account/{accountId}/withdraw",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/debug",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "database-write",
+      "description" : "Attacker-controlled data is used in a database query without any sanitation or encoding. This could be intended behavior and thus has a low score."
+    },
+    {
+      "route" : "/account/{accountId}/withdraw",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-log",
+      "description" : "Sensitive data leak detected in this flow. This content can be viewed by a third party that has access to the logs, such as system adminstrators."
+    },
+    {
+      "route" : "/account",
+      "owaspCategories" : [
+        "a6-sensitive-data-exposure"
+      ],
+      "title" : "sensitive-to-log",
+      "description" : "Sensitive data leak detected in this flow. This content can be viewed by a third party that has access to the logs, such as system adminstrators."
+    },
+    {
+      "route" : "/search/user",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "spel-injection",
+      "description" : "Unfiltered attacker controlled data is passed to a SpEL method (parseExpression) in this flow. This data is evaluated and under circumstances is executed."
+    },
+    {
+      "route" : "/ledgers/{ledgerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "spel-injection",
+      "description" : "Unfiltered attacker controlled data is passed to a SpEL method (parseExpression) in this flow. This data is evaluated and under circumstances is executed."
+    },
+    {
+      "route" : "/search/user",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "spel-injection",
+      "description" : "Unfiltered attacker controlled data is passed to a SpEL method (parseExpression) in this flow. This data is evaluated and under circumstances is executed."
+    },
+    {
+      "route" : "/ledgers/{ledgerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "spel-injection",
+      "description" : "Unfiltered attacker controlled data is passed to a SpEL method (parseExpression) in this flow. This data is evaluated and under circumstances is executed."
+    },
+    {
+      "route" : "/saveSettings",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "directory-traversal",
+      "description" : "Data from HTTP methods is not escaped, hashed or encoded and used as a file name in this flow. This indicates a directory traversal or an arbitrary file write. See http://cwe.mitre.org/data/definitions/22.html"
+    },
+    {
+      "route" : "/saveSettings",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "directory-traversal",
+      "description" : "Data from HTTP methods is not escaped, hashed or encoded and used as a file name in this flow. This indicates a directory traversal or an arbitrary file write. See http://cwe.mitre.org/data/definitions/22.html"
+    },
+    {
+      "route" : "/admin/login",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "deserialization",
+      "description" : "Attacker controlled data is deserialized in this flow. This can lead to an authentication bypass or may trigger code execution, depending on the classpath. The type of the class should be checked before deserialized (https://www.owasp.org/index.php/Deserialization_Cheat_Sheet#Harden_Your_Own_java.io.ObjectInputStream)."
+    },
+    {
+      "route" : "/admin/printSecrets",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "deserialization",
+      "description" : "Attacker controlled data is deserialized in this flow. This can lead to an authentication bypass or may trigger code execution, depending on the classpath. The type of the class should be checked before deserialized (https://www.owasp.org/index.php/Deserialization_Cheat_Sheet#Harden_Your_Own_java.io.ObjectInputStream)."
+    },
+    {
+      "route" : "/admin/login",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "deserialization",
+      "description" : "Attacker controlled data is deserialized in this flow. This can lead to an authentication bypass or may trigger code execution, depending on the classpath. The type of the class should be checked before deserialized (https://www.owasp.org/index.php/Deserialization_Cheat_Sheet#Harden_Your_Own_java.io.ObjectInputStream)."
+    },
+    {
+      "route" : "/admin/printSecrets",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "deserialization",
+      "description" : "Attacker controlled data is deserialized in this flow. This can lead to an authentication bypass or may trigger code execution, depending on the classpath. The type of the class should be checked before deserialized (https://www.owasp.org/index.php/Deserialization_Cheat_Sheet#Harden_Your_Own_java.io.ObjectInputStream)."
+    },
+    {
+      "route" : "/admin/login",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "deserialization",
+      "description" : "Attacker controlled data is deserialized in this flow. This can lead to an authentication bypass or may trigger code execution, depending on the classpath. The type of the class should be checked before deserialized (https://www.owasp.org/index.php/Deserialization_Cheat_Sheet#Harden_Your_Own_java.io.ObjectInputStream)."
+    },
+    {
+      "route" : "/search/user",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "command-injection",
+      "description" : "Attacker controlled data is used during process creation without undergoing escaping or validation. This could allow an attacker to execute code on the server."
+    },
+    {
+      "route" : "/ledgers/{ledgerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "command-injection",
+      "description" : "Attacker controlled data is used during process creation without undergoing escaping or validation. This could allow an attacker to execute code on the server."
+    },
+    {
+      "route" : "/search/user",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "command-injection",
+      "description" : "Attacker controlled data is used during process creation without undergoing escaping or validation. This could allow an attacker to execute code on the server."
+    },
+    {
+      "route" : "/ledgers/{ledgerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "command-injection",
+      "description" : "Attacker controlled data is used during process creation without undergoing escaping or validation. This could allow an attacker to execute code on the server."
+    },
+    {
+      "route" : "/search/user",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "command-injection",
+      "description" : "Attacker controlled data is used during process creation without undergoing escaping or validation. This could allow an attacker to execute code on the server."
+    },
+    {
+      "route" : "/ledgers/{ledgerId}",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "command-injection",
+      "description" : "Attacker controlled data is used during process creation without undergoing escaping or validation. This could allow an attacker to execute code on the server."
+    },
+    {
+      "route" : "/saveSettings",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "file-write",
+      "description" : "Data from HTTP methods is not escaped, hashed or encoded and used as a file name in this flow. This indicates a directory traversal or an arbitrary file write. See http://cwe.mitre.org/data/definitions/22.html"
+    },
+    {
+      "route" : "/saveSettings",
+      "owaspCategories" : [
+        "a1-injection"
+      ],
+      "title" : "file-write",
+      "description" : "Data from HTTP methods is not escaped, hashed or encoded and used as a file name in this flow. This indicates a directory traversal or an arbitrary file write. See http://cwe.mitre.org/data/definitions/22.html"
+    }
+  ]
+}

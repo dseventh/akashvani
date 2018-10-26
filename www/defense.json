@@ -1,0 +1,45 @@
+{
+  "rulegroup": "owasp",
+  "access_check" : [
+      {
+        "rule" : "a1-injection:command-injection",
+        "regex" : "java.lang.ProcessBuilder"
+      },
+      {
+        "rule" : "a1-injection:spel-injection",
+        "regex" : "request.getSession"
+      },
+      {
+        "rule" : "a1-injection:database-write",
+        "regex" : "insert"
+      },
+      {
+        "rule" : "a6-sensitive-data-exposure:sensitive-to-http",
+        "regex" : "passwordleak"
+      }
+  ],
+
+  "http_header_check" : [
+    {
+      "rule" : "a6-sensitive-data-exposure:sensitive-to-http",
+      "name" : "Content-Type",
+      "regex" : "bad"
+    },
+    {
+      "rule": "a1-injection:session-injection",
+      "name" : "Inject",
+      "regex" :"helloworld"
+    }
+  ],
+
+  "content_check" : [
+    {
+      "rule" : "a6-sensitive-data-exposure:sensitive-to-http",
+      "regex" : "bad"
+    },
+    {
+      "rule": "a1-injection:session-injection",
+      "regex" :"helloworld"
+    }
+  ]
+}
